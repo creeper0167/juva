@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+		<style>
+			body,h1,h2,h3,h4,h5,h6 
+			{font-family: "Amatic SC", sans-serif}
+			
+			a{
+				text-decoration: none;
+			}
+			li{
+				list-style: none;
+			}
+			.header {
+			    margin: 0;
+			    padding: 0;
+			    box-sizing: border-box;
+			    border-bottom: 3px solid #E2E8F0;
+			}
+
+			.navbar {
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+			    padding: 1rem 1.5rem;
+			}
+			.hamburger{
+				display: none;
+			}
+			.bar{
+				display: block;
+			    width: 25px;
+			    height: 3px;
+			    margin: 5px auto;
+			    -webkit-transition: all 0.3s ease-in-out;
+			    transition: all 0.3s ease-in-out;
+			    background-color: #101010;
+			}
+			#header-image{
+				position: relative;
+			}
+			#header-image img{
+				width: 100%;
+				margin: none;
+				padding: none;
+			}
+			#image-text{
+
+				position: absolute;
+				text-align: left;
+				top: 60%;
+				left: 8%;
+			}
+			#button{
+				display: inline-block;
+				padding: 0.3em 1em;
+				text-decoration: none;
+				color: #67c5ff;
+				border: solid 2px #67c5ff;
+				border-radius: 3px ;
+				transition: .4s;
+
+			}
+			#button:hover{
+				background: #67c5ff;
+    			color: white;
+			}
+
+			@media only screen and (max-width: 600px){
+				#image-text{
+
+					position: absolute;
+					text-align: left;
+					top: 90%;
+					left: 8%;
+				}
+				#button{
+					display: inline-block;
+					padding: 0.3em 1em;
+					text-decoration: none;
+					color: #67c5ff;
+					border: solid 2px #67c5ff;
+					border-radius: 3px ;
+					transition: .4s;
+
+				}
+				#button:hover{
+					background: #67c5ff;
+	    			color: white;
+				}				
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="navbar">
+				<a class="nav-logo" href="#">Juva</a>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="#" class="nav-link">About</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+				</div>
+			</nav>	
+		</header>
+
+		<div id="header-image">
+			<img src="images/backJuva.png">
+				<div id="image-text">
+					<h1>Artistic Group</h1>
+					<h2><a id="button" href="#">Click To See Resúme</a></h2>
+				</div>
+		</div>
+	</body>
+</html>
